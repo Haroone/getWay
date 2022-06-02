@@ -1,22 +1,3 @@
-<?php
-require('config/config.php');
-
-//Create Query
-$query = 'SELECT * FROM form';
-
-//GET Results
-$result = mysqli_query($conn, $query);
-
-//Fetch Data
-$pers = mysqli_fetch_all($result, MYSQLI_ASSOC);
-
-//Free Result
-mysqli_free_result($result);
-
-//Close Connection
-mysqli_close($conn);
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
